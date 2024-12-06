@@ -9,6 +9,10 @@ return {
     -- lspconfig.jdtls.setup {}
     -- lspconfig.pyright.setup {}
 
+    -- Control commands
+    vim.keymap.set("n", "<space>ls", ":LspStart<cr>", { desc = "LSP start" })
+    vim.keymap.set("n", "<space>lS", ":LspStop<cr>", { desc = "LSP stop" })
+
     -- Info commands
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP go to definition" })
     vim.keymap.set("n", "gD", vim.lsp.buf.type_definition, { desc = "LSP go to type definition" })
