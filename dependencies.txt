@@ -3,3 +3,5 @@ git
 luarocks
 ripgrep
 fd-find
+
+And may you need lsp languages
