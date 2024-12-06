@@ -1,0 +1,3 @@
+ripgrep: fuzzy-finder.lua
+
+And may you need lsp languages
