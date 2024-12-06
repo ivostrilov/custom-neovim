@@ -1,0 +1,5 @@
+nvim
+git
+luarocks
+ripgrep
+fd-find
