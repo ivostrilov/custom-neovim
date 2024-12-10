@@ -9,6 +9,16 @@ return {
     -- lspconfig.jdtls.setup {}
     -- lspconfig.pyright.setup {}
 
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = 'sh',
+      callback = function()
+        vim.lsp.start({
+          name = 'bash-language-server',
+          cmd = { 'bash-language-server', 'start' },
+        })
+      end,
+    })
+
     -- Control commands
     vim.keymap.set("n", "<space>ls", ":LspStart<cr>", { desc = "LSP start" })
     vim.keymap.set("n", "<space>lS", ":LspStop<cr>", { desc = "LSP stop" })
