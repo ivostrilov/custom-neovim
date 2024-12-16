@@ -22,6 +22,7 @@ return {
     -- Control commands
     vim.keymap.set("n", "<space>ls", ":LspStart<cr>", { desc = "LSP start" })
     vim.keymap.set("n", "<space>lS", ":LspStop<cr>", { desc = "LSP stop" })
+    vim.keymap.set("n", "<space>lr", ":LspRestart<cr>", { desc = "LSP restart" })
 
     -- Info commands
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP go to definition" })
