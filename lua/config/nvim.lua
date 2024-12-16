@@ -17,7 +17,8 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Clipboard
-vim.opt.clipboard = "unnamedplus"
+vim.keymap.set("n", "<space>y", '"*y', { desc = "Copy to clipboard" })
+vim.keymap.set("v", "<space>y", '"*y', { desc = "Copy to clipboard" })
 
 -- Shorter messages
 -- vim.opt.shortmess:append("c")
