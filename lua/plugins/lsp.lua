@@ -5,19 +5,20 @@ return {
   config = function()
     local lsp_config = require('lspconfig')
 
-    lsp_config.clangd.setup({ autostart = false })
+    -- Enable what you need
+    -- lsp_config.clangd.setup({ autostart = false })
     -- lspconfig.jdtls.setup {}
     -- lspconfig.pyright.setup {}
 
-    vim.api.nvim_create_autocmd('FileType', {
-      pattern = 'sh',
-      callback = function()
-        vim.lsp.start({
-          name = 'bash-language-server',
-          cmd = { 'bash-language-server', 'start' },
-        })
-      end,
-    })
+    -- vim.api.nvim_create_autocmd('FileType', {
+    --   pattern = 'sh',
+    --   callback = function()
+    --     vim.lsp.start({
+    --       name = 'bash-language-server',
+    --       cmd = { 'bash-language-server', 'start' },
+    --     })
+    --   end,
+    -- })
 
     -- Control commands
     vim.keymap.set("n", "<space>ls", ":LspStart<cr>", { desc = "LSP start" })
