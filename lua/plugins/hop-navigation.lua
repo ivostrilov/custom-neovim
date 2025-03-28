@@ -1,4 +1,4 @@
-# https://github.com/hadronized/hop.nvim
+-- https://github.com/hadronized/hop.nvim
 
 return {
   "hadronized/hop.nvim",

@@ -1,4 +1,4 @@
-# https://github.com/vim-scripts/BufOnly.vim
+-- https://github.com/vim-scripts/BufOnly.vim
 
 return {
   "vim-scripts/BufOnly.vim",

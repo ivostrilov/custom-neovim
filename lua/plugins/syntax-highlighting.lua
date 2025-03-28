@@ -1,4 +1,4 @@
-# https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#quickstart
+-- https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#quickstart
 
 return {
   "nvim-treesitter/nvim-treesitter",

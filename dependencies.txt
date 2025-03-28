@@ -1,7 +1,7 @@
 nvim
 git
-luarocks
-ripgrep
-fd-find
+luarocks: ?
+ripgrep: fuzzy-finder.lua
+fd-find: ?
 
 And may you need lsp languages

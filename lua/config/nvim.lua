@@ -10,7 +10,7 @@ vim.opt.number = true
 --vim.opt.relativenumber = true
 
 -- Vertical column
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "80"
 
 -- Splits
 vim.opt.splitbelow = true

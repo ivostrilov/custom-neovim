@@ -1,4 +1,4 @@
-# https://github.com/j-morano/buffer_manager.nvim
+-- https://github.com/j-morano/buffer_manager.nvim
 
 return {
   "j-morano/buffer_manager.nvim",
