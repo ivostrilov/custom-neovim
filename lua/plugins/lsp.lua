@@ -2,6 +2,7 @@
 
 return {
   "neovim/nvim-lspconfig",
+  tag = "v1.7.0",
   config = function()
     local enabled_servers = {
       bashls = false,
