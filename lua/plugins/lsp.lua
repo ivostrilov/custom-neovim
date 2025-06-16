@@ -7,6 +7,7 @@ return {
       bashls = false,
       pylsp = false,
       clangd = false,
+      jdtls = false
     }
 
     local lsp_config = require('lspconfig')
@@ -46,6 +47,21 @@ return {
 
     if enabled_servers.clangd then
       lsp_config.clangd.setup {}
+    end
+
+    if enabled_servers.jdtls then
+      lsp_config.jdtls.setup({
+        cmd = { 'jdtls.sh' },
+        filetypes = { 'java' },
+        root_dir = function(fname)
+          return lsp_config.util.root_pattern(
+          'pom.xml',
+          'gradlew',
+          '.git',
+          'build.gradle'
+          )(fname) or lspconfig.util.path.dirname(fname)
+        end
+      })
     end
 
     -- Control commands
