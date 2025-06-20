@@ -1,5 +1,4 @@
-vim.cmd 'colorscheme material'
-require('material.functions').change_style("darker")
+vim.cmd 'colorscheme jb'
 
 -- Mouse
 vim.opt.mouse = "a"
